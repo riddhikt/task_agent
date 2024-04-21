@@ -1,1 +1,1 @@
-web: gunicorn task_agent:app
+web: uvicorn task_agent:app --host=0.0.0.0 --port=$PORT
